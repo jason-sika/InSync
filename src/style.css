@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+body, html {
+    background: #FAE9D7;
+    margin: 0px !important;
+}
+
+.app {
+    height: 100vw;
+}
+
+.topbar {
+    display: flex;
+    padding: 16px;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo #pic {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+h1 {
+    font-family: Fraunces;
+    color: #643B25;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.windows {
+    background: #FAE9D7;
+    display: flex;
+    padding: 20px 20px 10px 20px;
+    align-items: center;
+    gap: 20px;
+    flex: 1 0 0;
+    height: max-content;
+}
+
+.lyrics {
+    background: #FFFAE5;
+    border-radius: 40px;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: left;
+    gap: 24px;
+    flex: 1 0 0;
+    align-self: stretch;
+    height: max-content;
+}
+
+.syncing {
+    background: #FFFAE5;
+    border-radius: 40px;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: left;
+    gap: 24px;
+    flex: 1 0 0;
+    align-self: stretch;
+    height: max-content;
+}
+
+.controls {
+    display: flex;
+padding: 10px 20px 20px 20px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+}
+
+.fileinfo {
+    display: flex;
+padding: 10px 20px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 100px;
+background: #FFFAE5;
+}
+
+.time {
+    display: flex;
+padding: 10px 20px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 100px;
+background: #FFFAE5;
+}
+
+.extracontrols {
+    display: flex;
+padding: 10px 20px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 100px;
+background: #FFFAE5;
+}
+
+.lyricstitle {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: left;
+}
+
+.lyricstitle h3 {
+    font-family: Fraunces;
+    color: #643B25;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.45px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.icon #pic {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.syncingtitle {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: left;
+}
+
+.syncingtitle h3 {
+    font-family: Fraunces;
+    color: #643B25;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.45px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.icon #pic {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.lyricsfield {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: bottom left;
+    gap: 9px;
+    align-self: stretch;
+}
+
+.lyriccontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+}
+
+.editbtn {
+        visibility: hidden;
+}
+
+.lyriccontainer:hover >
+.editbtn {
+        visibility: visible;
+    }
+
+.lyricline {
+    padding: 16px;
+    align-items: center;
+    background-color: #FAE9D7;
+    display: flex;
+    border-radius: 100px;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.lyricline h3 {
+    font-family: InterVariable;
+    font-size: 16px;
+    font-weight: 600;
+    color: #643B25;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.backs {
+    padding: 5px 10px;
+    align-items: center;
+    background-color: #643B25;
+    display: flex;
+    border-radius: 100px;
+    justify-content: space-between;
+    width: fit-content;
+    height: fit-content;
+}
+
+.backs h3 {
+    font-family: InterVariable;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #FAE9D7;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.typingcont{
+    padding: 4px;
+    align-items: center;
+    background-color: #FAE9D7;
+    display: flex;
+    border-radius: 100px;
+    flex: 1 0 0;
+    justify-content: space-between;
+}
+
+.typingfield{
+    font-family: InterVariable;
+    font-weight: 600;
+    font-size: 15px;
+    color: #643b25;
+    padding: 10px;
+    background-color: #FAE9D7;
+    display: flex;
+    flex: 1 0 0;
+    align-items: center;
+    border-radius: 100px;
+    justify-content: space-between;
+    border-width: 0px;
+}
+
+.typingfield:focus {
+    color: #643b25;
+    flex: 1 0 0;
+    transition: 0.3s ease;
+    border-width: 0px !important;
+}
+
+.typingfield:active {
+    color: #643b25;
+    border-width: 0px !important;
+    flex: 1 0 0;
+    transition: 0.3s ease;
+}
+
+.typingfield::placeholder {
+    align-self: stretch;
+    text-align: center;
+    font-family: InterVariable;
+    font-weight: 600;
+    color: #643B25;
+}
+
+.typingfield:focus::placeholder {
+    align-self: stretch;
+    text-align: center;
+    font-family: InterVariable;
+    font-weight: 600;
+    color: #643b2567;
+}
+
+.sendbtn {
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #FFD400;
+    border-radius: 100px;
+}
