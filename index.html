@@ -66,14 +66,15 @@
         </div>
         <div class="controls">
             <div class="fileinfo">
+                <div class="fileimage">
+                    <img id="pic" src="src/InSyncIcon.png">
+                </div>
                 <div class="textinfo">
                     <h3>Title</h3>
                     <h4>Artist</h4>
                 </div>
-                <div class="fileimage">
-                    <img id="pic" src="src/InSyncIcon.png">
-                </div>
             </div>
+            <div class="fill"></div>
             <div class="time">
                 <audio id="myAudio" hidden>
                     <source src="/src/songs/loadedsong.mp3" type="audio/mpeg">
@@ -104,6 +105,7 @@
                     </svg>
                 </button>
             </div>
+            <div class="fill"></div>
             <div class="extracontrols">
                 <button class="button" onclick="document.getElementById('myAudio').volume+=0.1">
                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -130,6 +132,7 @@
                     </svg>
                 </button>
             </div>
+            <div class="fill"></div>
         </div>
     </div>
 </body>
