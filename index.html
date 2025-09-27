@@ -13,6 +13,7 @@
     <title>InSync</title>
     <link rel="icon" type="image/x-icon" href="src/InSyncIcon.png">
     <link rel="stylesheet" href="src/style.css">
+    <link rel="script" href="src/script.js">
 </head>
 
 <body>
@@ -64,6 +65,23 @@
     <div class="fileinfo">
     </div>
     <div class="time">
+        <div class="audio-player">
+            <audio id="myAudio" controls>
+                <source src="/src/songs/loadedsong.mp3" type="audio/mpeg">
+                <source src="song.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+            <input type="range" step="any" id="seek" value="0">
+            <script>
+                myAudio.onloadedmetadata = () => seek.max = myAudio.duration
+                seek.onchange = () => myAudio.currentTime = seek.value
+                myAudio.ontimeupdate = () => seek.value = myAudio.currentTime
+            </script>
+            <button onclick="document.getElementById('myAudio').play()">Play</button>
+            <button onclick="document.getElementById('myAudio').pause()">Pause</button>
+            <button onclick="document.getElementById('myAudio').volume+=0.1">Volume Up</button>
+            <button onclick="document.getElementById('myAudio').volume-=0.1">Volume Down</button>
+        </div>
     </div>
     <div class="extracontrols">
     </div>
