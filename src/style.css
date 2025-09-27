@@ -353,11 +353,10 @@ background: #FFFAE5;
     color: #643b2567;
 }
 
-.sendbtn {
+.button#send {
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: #FFD400;
+    background-color: #FFD400 !important;
     border-radius: 100px;
+    height: 28px !important;
 }
