@@ -56,6 +56,19 @@ h1 {
     background-color: #000000 !important;
 }
 
+.button:hover {
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: #534c5470 !important;
+}
+
+.button:active {
+    cursor: pointer;
+    transition: 0.1s ease-out;
+    filter: brightness(1.1);
+    background-color: #534c54 !important;
+}
+
 .titlecontainer {
     display: flex;
     gap: 6px;
@@ -127,9 +140,7 @@ h1 {
 }
 
 .backs {
-    padding: 5px 10px;
     align-items: center;
-
     display: flex;
     justify-content: space-between;
     width: fit-content;
@@ -161,6 +172,7 @@ h1 {
 
 .typingfield {
     resize: none;
+    padding: 0px !important;
     appearance: none !important;
     background-color: #000000;
     border-width: 0px;
@@ -170,18 +182,23 @@ h1 {
     font-weight: 600;
     font-size: 15px;
     color: #534C54;
+    outline: none;
 }
 
 .typingfield:active {
     appearance: none !important;
     background-color: #000000;
     border-width: 0px;
+    border-style: none;
+    outline: none;
 }
 
 .typingfield:focus {
     appearance: none !important;
     background-color: #000000;
     border-width: 0px;
+    border-style: none;
+    outline: none;
 }
 
 .typingfield:focus::placeholder {
@@ -267,6 +284,7 @@ h1 {
 
 #seek {
     -webkit-appearance: none;
+    margin: 0px !important;
     width: 100%;
     height: 77px;
     background-color: #534C54;
