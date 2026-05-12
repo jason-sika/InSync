@@ -1,0 +1,105 @@
+.content-section {
+    /* appearance */
+    width: 100%;
+}
+
+.content-section:first-of-type {
+    border-right: 1px solid var(--line-color);
+}
+
+.content-section .section-header {
+    /* appearance */
+    height: 69px;
+    padding-left: 24px;
+    border-bottom: 1px solid var(--line-color);
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.content-section .section-header h2 {
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+}
+
+.content-section .section-header .app-section-button {
+    /* appearance */
+    all: unset;
+    height: 100%;
+    padding: 0px 16px;
+    border-left: 1px solid var(--line-color);
+
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* typography */
+    text-transform: uppercase;
+}
+
+.content-section .section-header .app-section-button:hover {
+    background: var(--accent2);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.content-section .section-content {
+    /* appearance */
+    height: 100%;
+    padding: 24px;
+    overflow-y: auto;
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.app-write-line {
+    /* appearance */
+    width: 100%;
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.app-write-line.app-write-headerLine {
+    /* appearance */
+    width: unset;
+    height: 20px;
+    padding: 0px 4px;
+    border: 1px solid var(--line-color);
+    margin-top: 16px;
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.lyric-edit-button {
+    all: unset;
+}
+
+.lyric-edit-button:hover {
+    cursor: pointer;
+}
+
+.app-sync-timestamp {
+    display: none; /* hidden by default */
+}

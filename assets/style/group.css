@@ -1,0 +1,236 @@
+.app-header {
+    /* appearance */
+    width: 100%;
+    height: 77px;
+    border-bottom: 1px solid var(--line-color);
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-header .group-leading,
+.app-footer .group-leading,
+.app-footer .group-center {
+    /* appearance */
+    height: 100%;
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+.app-header .group-trailing {
+    /* appearance */
+    height: 100%;
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+.app-header .app-title {
+    /* appearance */
+    padding: 16px;
+    border-right: 1px solid var(--line-color);
+    background-color: var(--accent1);
+    height: 100%;
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.app-title h1 {
+    /* typography */
+    font-family: Geist !important;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.4px;
+}
+
+.app-header .app-menuBar {
+    /* appearance */
+    height: 100%;
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+.app-header .app-menuBar .app-menuBar-button,
+.app-header .group-trailing .app-menuBar-button,
+.app-footer .app-footer-button {
+    /* appearance */
+    all: unset;
+    width: 88px;
+    height: 100%;
+    border-right: 1px solid var(--line-color);
+
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-header .group-trailing .app-menuBar-button {
+    width: 130px;
+    border-left: 1px solid var(--line-color) !important;
+    border-right: none !important;
+    animation: pulse 1s ease-in-out 1s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: var(--accent2);
+    }
+    100% {
+        background-color: none;
+    }
+    
+}
+
+.app-header .group-trailing .app-menuBar-button:hover {
+    background-color: var(--accent1);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    animation: none;
+}
+
+.app-header .app-fileName .file-name-heading,
+.app-footer .app-songWrapper {
+    all: unset;
+}
+
+.app-header .app-fileName .file-name-heading:hover {
+    cursor: pointer;
+}
+
+.app-header .app-menuBar .app-menuBar-button:hover,
+.app-footer .app-footer-button:hover,
+.app-footer .app-songWrapper:hover
+.app-header-group > .app-menuBar-button:hover {
+    background: var(--accent2);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.app-header .group-trailing .app-fileName {
+    /* appearance */
+    padding: 16px;
+    border-left: 1px solid var(--line-color);
+    height: 77px;
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4px;
+
+    /* typography */
+    text-align: right;
+}
+
+.app-header .app-fileName #fileNameArtist {
+    display: none;
+}
+
+.app-header-spacer,
+.app-footer-spacer {
+    flex-grow: 1;
+    height: 100%;
+    background: url('../images/lines.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.app-footer {
+    /* appearance */
+    width: 100%;
+    height: 77px;
+    border-top: 1px solid var(--line-color);
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-footer-button.button-disabled {
+    background: url('../images/linesInverted.png')!important;
+    background-size: cover!important;
+    background-position: center;
+    background-repeat: no-repeat!important;
+    cursor: not-allowed!important;
+}
+
+.app-footer-button.button-disabled p {
+    opacity: 0.6;
+}
+
+.app-footer .group-leading .app-song {
+    /* appearance */
+    padding: 16px 16px 16px 12px;
+    border-right: 1px solid var(--line-color);
+    height: 77px;
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.app-footer .app-song .app-albumArt {
+    width: 54px;
+    height: 54px;
+    background: color-mix(in srgb, var(--line-color) 100%, #000000 50%);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.app-footer .app-song .app-songDetails {
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+}
+
+.app-footer-group.group-center {
+    border-left: 1px solid var(--line-color);
+    border-right: 1px solid var(--line-color);
+}
+
+.app-footer-group .app-songInfo {
+    /* appearance */
+    all: unset;
+    padding: 16px;
+    border-right: 1px solid var(--line-color);
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}

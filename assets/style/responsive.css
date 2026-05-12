@@ -1,0 +1,13 @@
+@media only screen and (max-width: 768px) {
+    .hide-below-768px {
+        display: none!important;
+    }
+
+    .app-header .group-trailing .app-fileName {
+        border-left: 0px!important;
+    }
+
+    .app-footer .group-leading .app-song {
+        padding-right: 12px;
+    }
+}

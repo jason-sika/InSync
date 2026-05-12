@@ -1,0 +1,36 @@
+input[type="text"] {
+    all: unset;
+}
+
+.app-header .app-fileName input {
+    /* appearance */
+    width: min(540px, 60vw);
+    height: 24px;
+    transform: translateY(-1px);
+
+    /* typography */
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.4px;
+}
+
+.app-song-input {
+    display: none;
+}
+
+.app-write-newLine {
+    /* appearance */
+    all: unset;
+    width: 100%;
+
+    /* typography */
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.4px;
+}
+
+.app-write-newLine::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
