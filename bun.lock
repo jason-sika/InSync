@@ -6,6 +6,7 @@
       "name": "insync",
       "devDependencies": {
         "@sveltejs/adapter-cloudflare": "^7.2.8",
+        "@sveltejs/kit": "^2.59.1",
         "@sveltejs/vite-plugin-svelte": "^5.0.3",
         "svelte": "^5.19.7",
         "vite": "^6.1.0",
